@@ -4,4 +4,6 @@ class SmallestIntegerFinder {
       console.log(minArray);
     }
   }
-  findSmallestInt(10);
+
+  //findSmallestInt(10);
+
