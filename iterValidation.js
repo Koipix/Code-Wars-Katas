@@ -18,6 +18,25 @@ function isValidWalk(walk) {
   return x === 0 && y === 0;
 }
 
+///Java ver
+public class TenMinWalk {
+  public static boolean isValid(char[] walk) {
+    if (walk.length != 10) {
+      return false;
+    }
+    int x = 0;
+    int y = 0;
+    
+    for (var i = 0; i < walk.length; i++) {
+      if (walk[i] == 'n') x++;
+      else if (walk[i] == 's') x--;
+      else if (walk[i] == 'w') y++;
+      else if (walk[i] == 'e') y--;
+    }
+    return x == 0 && y == 0;
+  }
+}
+
 //OLD VER.
 // function isValidWalk(walk) {
 //   let min = 0; 
